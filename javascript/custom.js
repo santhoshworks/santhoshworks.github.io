@@ -155,7 +155,7 @@
             /***CLIENTS LOGO SLIDER***/
             var $clientcarousel = $('ul#clients-list');
             var clients = $clientcarousel.children().length;
-            var clientwidth = (clients * 140); // 140px width for each client item
+            var clientwidth = (clients * 320); // 140px width for each client item
             $clientcarousel.css('width', clientwidth);
 
             var rotating = true;
@@ -175,7 +175,7 @@
             function rotateClients() {
                 if (rotating !== false) {
                     var $first = $('ul#clients-list').find('li:first');
-                    $first.animate({'margin-left': '-140px'}, 2000, function () {
+                    $first.animate({'margin-left': '-320px'}, 2000, function () {
                         $first.remove().css({'margin-left': '0px'});
                         $('ul#clients-list').find('li:last').after($first);
                     });

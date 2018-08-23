@@ -1759,9 +1759,11 @@ POPUP ANIMATIONS
         display: block;
         float: left;
         position: relative;
-        width: 140px;
-        height: 55px;
-        line-height: 55px;
+        width: 280px;
+        height: 100%;
+        line-height: 100%;
+        margin: 10px 20px;
+        /* margin: 10px 10px; */
         text-align: center; }
         #testimonials #clients .clients-wrap ul li img {
           /*client logos*/
