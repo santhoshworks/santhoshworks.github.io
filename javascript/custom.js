@@ -159,7 +159,7 @@
             $clientcarousel.css('width', clientwidth);
 
             var rotating = true;
-            var clientspeed = 1800;
+            var clientspeed = 1000;
             setInterval(rotateClients, clientspeed);
 
             $(document).on({
@@ -175,7 +175,7 @@
             function rotateClients() {
                 if (rotating !== false) {
                     var $first = $('ul#clients-list').find('li:first');
-                    $first.animate({'margin-left': '-320px'}, 2000, function () {
+                    $first.animate({'margin-left': '-320px'}, 1000, function () {
                         $first.remove().css({'margin-left': '0px'});
                         $('ul#clients-list').find('li:last').after($first);
                     });
